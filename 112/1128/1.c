@@ -7,8 +7,8 @@ void printBinary(int n){
 	int bits[32];
 	int  i;
 	
-	if (n==0) printf("the binary value is 0");
 	
+	if (n==0) printf("the binary value is 0");
 	
 	for(i=31; i>=0; i--){
 		bits[i]= n % 2;
@@ -17,23 +17,19 @@ void printBinary(int n){
 	
 	for(i=0; i<32; i++)
 		printf("%d", bits[i]);
-		
+	printf("\n");		
 }
 
 
 int main ()
-  
 {
 	 int a;
-	
-	while(a<20)
-   {
-		(a>5)?a++:a--; 
-	    if(a>0) printf("%d\n", a);
-    }
-    
-    printBinary(10);
-    
+
+	printf("\n input an integer to make binary digits  \n", a);
+	scanf("%d",&a);
+    printBinary(a);
+	printf("\n");	
+
     
 return 0;
 }
