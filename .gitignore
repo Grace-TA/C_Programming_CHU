@@ -1,3 +1,9 @@
 
 *.exe
-113/VC/1108/EX01
+*.o
+*.d
+113/VC/20250408/bin/a
+*.o
+*.o
+*.o
+113/VC/20250319/decimal_to_binary_main.o

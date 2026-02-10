@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "${file}",  // Corrected: Added closing double quote
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}", // More robust output path
+                "-lglfw",
+                "-lGL",
+                "-lm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Builds the active file"
+        }
+    ]
+}
